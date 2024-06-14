@@ -1,0 +1,29 @@
+.main{
+    height:100%;
+    width:100%;
+    background-color: ghostwhite;
+    display: flex;
+    justify-content: center;
+    gap: 10px
+    ;
+}
+
+.container{
+    background-color: #030637;
+    height: 60vh;
+    padding: 3px;
+    border-radius: 5px;
+    width: 40vw;
+}
+
+
+
+.area{
+  height:70%;
+  background-color:#030637;
+  color:white;
+}
+
+button{
+   color: black;
+}
