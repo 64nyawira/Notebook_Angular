@@ -16,7 +16,9 @@
             <label for="username">Username</label>
             <input type="email" #email="ngModel" required email="" ngModel name="email"  placeholder="example@yop.com">
             <div *ngIf="email.invalid && (email.dirty || email.touched) " style="font-size:12px;color:red;margin-bottom:6px;">
-                Email is Invalid
+                <div *ngIf="email.hasError('required')">
+                    Email is Invalid
+                </div>
             </div>
             <div *ngIf="email.hasError('email') " style="font-size:12px;color:red;margin-bottom:6px;">
                 Email is required
