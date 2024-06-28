@@ -70,6 +70,8 @@
   display: flex;
   justify-content: center;
   gap:10px;
+ 
+  flex-wrap: wrap;
  }
 
  .display{
@@ -90,6 +92,11 @@
  }
 
  .display button{
-  margin-top:50%;
+ 
   color:red;
+ }
+
+ .juu{
+  display: flex;
+  gap: 20px;
  }

@@ -24,11 +24,17 @@
         
             <div class="all" >
                 <div *ngFor="let note of notes ;let i = index"  class="display" >
-                    <h2 (click)="editNote(i)">Title: {{note.title | reverseString}}</h2>
+
+                    <div class="juu">
+                        
+                        <button (click)="deleteNote(i)" class="delete">
+                        <i class="fas fa-trash"></i> 
+                       </button>
+                       <h2 (click)="editNote(i)">Title: {{note.title}}</h2>
+                    </div>
+                    
                     <p (click)="editNote(i)">{{note.content}}</p>
-                   <button (click)="deleteNote(i)" class="delete">
-                    <i class="fas fa-trash"></i> 
-                   </button>
+                   
                 </div>
             </div>
             
